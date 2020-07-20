@@ -1,0 +1,17 @@
+.traffic-header {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.traffic-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.widget-container-full, .widget-container-half { width: 95vw; }
+@media (min-width: 768px) {
+    .widget-container-full { width: 90vw; }
+    .widget-container-half { width: 45vw; }
+}

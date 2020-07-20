@@ -1,0 +1,33 @@
+/* New Members */
+.members-container {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    border: 1px solid #fbfbfb;
+}
+
+.profile-image {
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.members-info a {
+    text-decoration: none;
+}
+
+/* Recently Activity */
+.text-container {
+    grid-template-columns: 20% 70% 10%;
+}
+.members-text p {
+    font-size: 13px;
+}
+
+.arrow {
+    align-self: center;
+}
+.arrow a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffa4b0;
+}

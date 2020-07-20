@@ -1,6 +1,11 @@
 @import 'header.css' ;
 @import 'nav.css';
-@import 'mains.css/main.css';
+@import 'mains/dashboard.css';
+@import 'mains/alert.css';
+@import 'mains/traffic.css';
+@import 'mains/social.css';
+@import 'mains/member.css';
+@import 'mains/message&setting.css';
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -8,10 +13,11 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-template-areas:
     "header"
     "nav"
     "main";
 }
+

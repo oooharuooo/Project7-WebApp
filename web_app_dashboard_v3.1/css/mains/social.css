@@ -1,0 +1,20 @@
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex-social {
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    width: 110px;
+}
+.social-text p:first-child {
+    color: #8888ff;
+    font-weight:bold;
+}
+
+.social-text p:last-child {
+    font-size: 25px;
+}
