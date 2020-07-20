@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-App</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class = 'container'>
         <header class='header'> <!-- Header start here -->
-            <h1>YourAppTM</h1>
+            <h1><span>Your</span>App</h1>
         <div class ='headerMember'>
             <div>
                 <img src="icons/icon-bell.svg"  alt="Bell" width="25" height="25">
@@ -23,24 +23,26 @@
             
         <nav class='nav'>   <!-- Nav bar start here -->
             <a>
-                <img src='icons/icon-dashboard.svg' alt="Dashboard" width="50" height="50">
+                <img src='icons/icon-dashboard.svg' alt="Dashboard" width="40" height="40">
             </a>
-            <a>
-                <img src='icons/icon-members.svg' alt="Members" width="50" height="50">
+            <a class = 'padding-left'>
+                <img src='icons/icon-members.svg' alt="Members" width="40" height="40">
             </a>
-            <a>
-                <img src='icons/icon-visits.svg' alt="Visits" width="50" height="50">
+            <a class = 'padding-left'>
+                <img src='icons/icon-visits.svg' alt="Visits" width="40" height="40">
             </a>
-            <a>
-                <img src='icons/icon-settings.svg' alt="Settings" width="50" height="50">
+            <a class = 'padding-left'>
+                <img src='icons/icon-settings.svg' alt="Settings" width="40" height="40">
             </a>
         </nav>  <!-- Nav bar end here -->
     
         <main class='main-container'>
             <div class= 'dashBoard'>   <!-- Dashboard start here -->
                 <h2>Dashboard</h2>
-                <div class='search-bar'>
-                    <input type ='search' placeholder = 'Search'/>
+                <div class='flex-searchBar'>
+                    <div class='search-bar'>
+                        <input type ='search' placeholder = 'Search'/>
+                    </div>
                 </div>
             </div>  <!-- Dashboard end here -->
 
@@ -237,12 +239,8 @@
                 <button class="button-disabled" id="cancel">Cancel</button>
             </div>
         </section>
-    
-
-
-
-        </main>
-    </div>
+    </main>
+</div>
 
 
 

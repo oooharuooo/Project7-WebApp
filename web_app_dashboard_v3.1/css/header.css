@@ -1,0 +1,38 @@
+
+.header {
+    background-color:#8966ff8f;
+    display: flex;
+    grid-area: header;
+    align-items: center;
+}
+.headerMember {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.headerMember span {
+    border: 1px solid #007bccb0;
+    padding-top: 40px;
+}
+.headerMember img {
+    border-radius: 100%;
+}
+.header h1 {
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+.header h1 span {
+    font-weight:bolder;
+    font-size: 1.8rem;
+}
+
+.header h1::after {
+    content: "TM";
+    font-size: 0.9rem;
+    vertical-align:text-top;
+}
+.header h3 {
+    text-align: end;
+    color:whitesmoke
+}

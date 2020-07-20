@@ -1,0 +1,17 @@
+@import 'header.css' ;
+@import 'nav.css';
+@import 'mains.css/main.css';
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}

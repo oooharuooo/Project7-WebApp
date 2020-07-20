@@ -1,0 +1,24 @@
+.main-container {
+    display:grid;
+    background-color:#ece9ecd4;
+    grid-area: main;
+}
+
+.dashBoard {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.dashBoard h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.flex-searchBar {
+    display:flex;
+    background-color:#e8e2e2c9;
+    justify-content: flex-end;
+}
+.search-bar {
+    align-self: center;
+}
