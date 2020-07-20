@@ -17,6 +17,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
     "header"
+    "notification"
     "nav"
     "main";
 }

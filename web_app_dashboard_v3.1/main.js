@@ -1,27 +1,53 @@
+// Alert Banner
 const alertBanner = document.getElementById("alert");
 // // create the html for the banner
-// alertBanner.innerHTML =
-// `
-// <div class="alert-banner">
-// <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
-// to complete</p>
-// <p class="alert-banner-close">x</p>
-// </div>
-// `
+alertBanner.innerHTML =
+`
+<div class="alert-banner">
+<p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
+to complete</p>
+<p class="alert-banner-close">x</p>
+</div>
+`
 
-// alertBanner.addEventListener('click', e => {
-//     const element = e.target;
-//     if (element.classList.contains("alert-banner-close")) {
-//     alert.style.display = "none"
-//     }
-//     console.log(element)
-// });
+alertBanner.addEventListener('click', e => {
+    const element = e.target;
+    if (element.classList.contains("alert-banner-close")) {
+    alertBanner.style.display = "none"
+    }
+});
 
-const alertBannerClose = document.querySelector('.alert-banner-close')
-alertBannerClose.addEventListener('click',e => {
-    alertBanner.style.display = 'none';
+// Bell Notification
+const listNotifications = document.querySelector('.listNotifications')
+listNotifications.innerHTML =
+`
+    <ul>
+        <div class = 'flex-list'>
+            <li>You have 2 unread messages</li>
+            <p class="alert-banner-close">x</p>
+        </div>
+        <hr>
+        <div class = 'flex-list'>
+            <li>You have 3 new followers</li>
+            <p class="alert-banner-close">x</p>
+        </div>
+        <hr>
+        <div class = 'flex-list'> 
+            <li>Your password expired in 6 days</li>  
+            <p class="alert-banner-close">x</p>
+        </div>
+    </ul>
+
+`
+ listNotifications.style.display = 'none';
+    const bell = document.querySelector('.bell')
+    bell.addEventListener('click',e => {
+            listNotifications.style.display = 'block';
 })
-
+// Bell X Delete
+    const flexList = document.querySelector('.flex-list');
+    const buttonX = document.querySelector('.alert-banner-close');
+ 
 // Traffic-chart
 const trafficCanvas = document.getElementById('traffic-chart');
 let trafficData = {
@@ -126,3 +152,6 @@ send.addEventListener('click', () => {
     }
 });
     
+
+
+

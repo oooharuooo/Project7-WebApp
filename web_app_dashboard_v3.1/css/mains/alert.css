@@ -1,4 +1,33 @@
-.alert {
+.alert-banner {
     display:flex;
+    justify-content: space-evenly;
+    background-color:#90a6ee;
+    color: whitesmoke
+}
+
+
+.notf {
+    grid-area: notification;
+}
+
+.listNotifications {
+    background-color:#efedef;
+}
+.listNotifications li {
+    list-style-type: none;
+}
+.listNotifications li::before {
+    content: "•";
+    margin: 0 .5rem 0 0;
+    color: #ff8a00;
+    font-size: 25px
+}
+.listNotifications hr {
+    margin-right: 40px;
+}
+
+.flex-list {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
