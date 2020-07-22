@@ -20,7 +20,7 @@ alertBanner.addEventListener('click', e => {
 });
 
 //Bell Button
-const drop = document.querySelector('.dropBtn')
+const drop = document.querySelector('.dropBtn');
 drop.addEventListener('click',e => {
     document.getElementById("myDropdown").classList.toggle("show");
   }) 
@@ -28,7 +28,7 @@ drop.addEventListener('click',e => {
 $(".listNotifications").on("click", "button", function(e) {
     const listNotifications = $('.listNotifications');
     const flex = $('.flex-list');
-    const dot = $('.dot')
+    const dot = $('.dot');
     e.preventDefault();
    this.parentNode.remove();
    if(listNotifications.find(flex).length === 0) {
@@ -85,7 +85,7 @@ trafficNav.addEventListener('click',e => {
         data: trafficData,
         options: trafficOptions
     });
-})
+});
 // Daily-chart
 const dailyCanvas = document.getElementById("daily-chart");
 const dailyData = {
