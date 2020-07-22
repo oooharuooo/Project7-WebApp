@@ -1,3 +1,6 @@
+.alert {
+  grid-area: alert;
+}
 .alert-banner {
     display:flex;
     justify-content: space-evenly;
@@ -16,6 +19,14 @@
     border: none;
     cursor: pointer;
     background-color:#bda9ff;
+  }
+  .dot {
+      display:inline;
+  }
+  .dot::after {
+      content: "•";
+    color: #ff8a00;
+    font-size: 30px;
   }
 .dropBtn:hover {
     animation: ring 10s;

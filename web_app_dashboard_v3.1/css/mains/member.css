@@ -1,3 +1,9 @@
+.newMember {
+    grid-area: newMember;
+}
+.recently {
+    grid-area: recently;
+}
 /* New Members */
 .members-container {
     display: grid;

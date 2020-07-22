@@ -1,9 +1,97 @@
+.message {
+  grid-area: message;
+}
+.settings {
+  grid-area: settings;
+}
+/* Message User */
 .widget-container {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     grid-row-gap: 10px;
+    grid-template-rows: auto 100px;
 }
 .button-primary {
     background-color:#8966ff8f;
     border-radius:25px;
 }
+/* ON/OFF switch */
+.settingFlex {
+    text-align: center;
+    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr minmax(50px,25%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Timezone Save Cancel */
+  .timezone {
+      display:grid;
+      grid-gap: 20px;
+  }
+  .form-field {
+    background-color: #efedef;
+    border-radius: 25px;
+    text-align-last: center;
+  }
+  .settings-button {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 30px;
+  }
+  #cancel {
+      border-radius: 25px;
+      background-color: #cccccc;
+  }

@@ -1,14 +1,22 @@
+.social {
+    grid-area: social;
+}
 .social-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .flex-social {
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr 1fr;
     align-items: center;
     border-radius: 10%;
     background-color: whitesmoke;
-    width: 110px;
+    width: 90%;
+}
+.social-image {
+    text-align: center;
 }
 .social-text p:first-child {
     color: #8888ff;

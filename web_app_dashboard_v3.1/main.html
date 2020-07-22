@@ -14,7 +14,9 @@
         <div class ='headerMember'>
             <!-- Bell Button -->
             <div class="dropdown">
+                
                 <button class="dropBtn"></button>
+                <div class="dot"></div>
                 <div id="myDropdown" class="dropdown-content">
                     <ul class = 'listNotifications' >
                         <div class = 'flex-list'>
@@ -39,7 +41,7 @@
         </header>   <!-- Header end here -->
     
         <nav class='nav'>   <!-- Nav bar start here -->
-            <a>
+            <a class = 'padding-left'>
                 <img src='icons/icon-dashboard.svg' alt="Dashboard" width="35" height="40">
             </a>
             <a class = 'padding-left'>
@@ -95,7 +97,7 @@
             </section>
 
             <!-- Doughnut Charts -->
-            <section class="daily">
+            <section class="mobile">
                 <h3>Mobile Users</h3>
                 <div class="widget-container-half">
                     <!-- element bar graph will attach to -->
@@ -104,7 +106,7 @@
             </section>
 
             <!-- Social Media -->
-            <div>          
+            <div class ='social'>          
                 <h3>Social Stars</h3>
                 <div class="social-container"> 
                     <div class = 'flex-social'>
@@ -167,7 +169,7 @@
             </div> 
             
             <!-- new members widget -->
-        <section class="members">
+        <section class="members newMember">
             <h3>New Members</h3>
             
             <div class="members-container">
@@ -216,7 +218,7 @@
         </section>  <!-- End of new members -->
 
         <!-- Start of Recently Activity -->
-        <section class="members"> 
+        <section class="members recently"> 
             <h3>Recently Activity</h3>
             
             <div class="members-container text-container">
@@ -279,17 +281,31 @@
         <!-- local settings widget -->
         <section class="settings">
             <h3>Settings</h3>
-            <!-- custom CSS toggle code-->
-            <!-- custom CSS toggle code-->
-            <select class="form-field" id="timezone">
-                <option disabled selected>Select a Timezone</option>
-                <option>Eastern</option>
-                <!-- more options -->
-            </select>
-            <div class="settings-button" >
-                <button class="button-primary" id="save">Save</button>
-                <button class="button-disabled" id="cancel">Cancel</button>
+            <div class = 'settingFlex'>
+                <p>Send Email Notifications</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Set Profile to Public</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
             </div>
+            <section class="timezone">
+                <div class="timezone">
+                    <select class="form-field" >
+                        <option disabled selected>Select a Timezone</option>
+                        <option>Eastern</option>
+                        <!-- more options -->
+                    </select>
+                </div>
+                <div class="settings-button" >
+                    <button class="button-primary" id="save">Save</button>
+                    <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
+            </section>
         </section>
     </main>
 </div>

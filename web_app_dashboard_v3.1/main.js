@@ -24,17 +24,20 @@ const drop = document.querySelector('.dropBtn')
 drop.addEventListener('click',e => {
     document.getElementById("myDropdown").classList.toggle("show");
   }) 
-  
+
 $(".listNotifications").on("click", "button", function(e) {
     const listNotifications = $('.listNotifications');
     const flex = $('.flex-list');
+    const dot = $('.dot')
     e.preventDefault();
    this.parentNode.remove();
    if(listNotifications.find(flex).length === 0) {
        listNotifications.hide();
+       dot.hide();
    };
 });
   
+
 // Traffic-chart
 const trafficCanvas = document.getElementById('traffic-chart');
 let trafficData = {
@@ -65,6 +68,12 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions
 });
 
+// const trafficNav = document.querySelector('.traffic-nav');
+// trafficNav.addEventListener('click',e => {
+//     const dataTraffic = trafficData.datasets[0].data = [1150, 1250, 21000, 2000, 2500, 750, 1250, 1850, 2250, 1500,
+//         2500];
+//     console.log(dataTraffic)
+// })
 // Daily-chart
 const dailyCanvas = document.getElementById("daily-chart");
 const dailyData = {

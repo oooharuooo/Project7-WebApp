@@ -1,5 +1,5 @@
 .nav {
-    background-color:#90a6ee;
+    background-color:#5566a0;
     grid-area: nav;
     display:flex;
     align-items: center;
@@ -8,4 +8,14 @@
 
 .padding-left {
     padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display:block;
+    }
+    
+    .padding-left {
+        padding-left: 8px;
+    }
 }
