@@ -1,7 +1,7 @@
 @import 'header.css' ;
 @import 'nav.css';
 @import 'mains/dashboard.css';
-@import 'mains/alert.css';
+@import 'mains/alert&bell.css';
 @import 'mains/traffic.css';
 @import 'mains/social.css';
 @import 'mains/member.css';
@@ -17,8 +17,18 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
     "header"
-    "notification"
     "nav"
     "main";
 }
 
+/* SVG */
+.svg-size {
+    width:30px;
+    height: 50px;
+    background-color: #efedef;
+    border-radius: 40%;
+}
+.svg {
+    
+    fill: #af9774;
+}
