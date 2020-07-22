@@ -8,7 +8,7 @@ alertBanner.innerHTML =
 <div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
 to complete</p>
-<p class="alert-close">x</p>
+<p class="alert-close">X</p>
 </div>
 `
 // Alert X button remove
@@ -44,8 +44,7 @@ let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
             "4-10", "11-17", "18-24", "25-31"],
     datasets: [{
-        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-                2500],
+        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,2500],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
     }]
@@ -68,12 +67,25 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions
 });
 
-// const trafficNav = document.querySelector('.traffic-nav');
-// trafficNav.addEventListener('click',e => {
-//     const dataTraffic = trafficData.datasets[0].data = [1150, 1250, 21000, 2000, 2500, 750, 1250, 1850, 2250, 1500,
-//         2500];
-//     console.log(dataTraffic)
-// })
+// Traffic Navigation
+const trafficNav = document.querySelector('.traffic-nav');
+trafficNav.addEventListener('click',e => {
+    // random Number
+    const random = () => {
+        let array = [];
+        for (let i = 0; i < 11; i++) {
+          let randomNumber = Math.floor(Math.random() *2500 +100)
+            array.push(randomNumber)
+        }
+       return array
+     }
+    const dataTraffic = trafficData.datasets[0].data = random();
+    trafficChart = new Chart(trafficCanvas, {
+        type: 'line',
+        data: trafficData,
+        options: trafficOptions
+    });
+})
 // Daily-chart
 const dailyCanvas = document.getElementById("daily-chart");
 const dailyData = {
@@ -148,5 +160,7 @@ send.addEventListener('click', () => {
     }
 });
     
+// Setting Local Storage
+
 
 

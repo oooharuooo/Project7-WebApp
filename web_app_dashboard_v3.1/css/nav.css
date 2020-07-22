@@ -14,7 +14,10 @@
     .nav {
         display:block;
     }
-    
+    .fixed-nav {
+        position: fixed;
+        display: grid;
+    }
     .padding-left {
         padding-left: 8px;
     }
