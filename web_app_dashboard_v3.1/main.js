@@ -160,7 +160,6 @@ send.addEventListener('click', () => {
     }
 });
     
-// Setting Local Storage
 
 
 
